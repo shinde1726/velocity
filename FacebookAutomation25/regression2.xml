@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count = "2"  parallel= "tests">
+ 
+  <test name="ChromeBrowser">
+ <parameter name="browser" value="Chrome"/>
+    <classes>
+     <class name="browsercompatibility.Varifyroom"/>  
+   <class name="browsercompatibility.Varifyaccount"/>  
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FireFoxBrowser">
+ <parameter name="browser" value="FireFox"/>
+    <classes>
+     <class name="browsercompatibility.Varifyroom"/>  
+   <class name="browsercompatibility.Varifyaccount"/>  
+    </classes>
+  </test> <!-- Test -->
+ 
+ 
+  <test name="OperaBrowser">
+ <parameter name="browser" value="Opera"/>
+    <classes>
+     <class name="browsercompatibility.Varifyroom"/>  
+   <class name="browsercompatibility.Varifyaccount"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
