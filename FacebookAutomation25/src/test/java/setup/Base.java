@@ -24,10 +24,5 @@ public class Base {
 		 WebDriver driver=new OperaDriver();
 		 return driver;
 	}
-	public static WebDriver openieBrowser()
-	{
-		 System.setProperty("webdriver.ie.driver","C:\\selenium\\operadriver_win64\\operadriver.exe");
-		 WebDriver driver=new OperaDriver();
-		 return driver;
-	}
+	
 }
